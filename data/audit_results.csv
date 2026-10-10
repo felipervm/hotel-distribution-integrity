@@ -1,0 +1,57 @@
+stay_date,room_type,rate_plan,channel,currency,occupancy,meal_plan,tax_basis,promotion_code,nightly_rate,availability,cancel_window_hours,bookable,issues,priority,issue_count,assigned_team,next_action,review_status
+2026-11-01,Deluxe King,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-01,Deluxe King,BAR,GDS,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-01,Deluxe King,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-01,Deluxe King,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-01,Premier Suite,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-01,Premier Suite,BAR,GDS,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-01,Premier Suite,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-01,Premier Suite,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-02,Deluxe King,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-02,Deluxe King,BAR,GDS,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-02,Deluxe King,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,625,12,48,Yes,RATE_DIFFERENCE_REVIEW,MEDIUM,1,Revenue management / channel owner,Confirm negotiated/promotional conditions and all-in price before correcting.,OPEN
+2026-11-02,Deluxe King,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-02,Premier Suite,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-02,Premier Suite,BAR,GDS,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-02,Premier Suite,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-02,Premier Suite,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-03,Deluxe King,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-03,Deluxe King,BAR,GDS,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-03,Deluxe King,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-03,Deluxe King,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-03,Premier Suite,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-03,Premier Suite,BAR,GDS,CAD,2,Room only,Before tax,NONE,1120,0,48,Yes,AVAILABILITY_DIFFERENCE_REVIEW,HIGH,1,Distribution systems / connectivity,"Validate channel timestamps, allotment and connectivity before changing inventory.",OPEN
+2026-11-03,Premier Suite,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-03,Premier Suite,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-04,Deluxe King,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-04,Deluxe King,BAR,GDS,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-04,Deluxe King,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-04,Deluxe King,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,650,12,24,Yes,CANCELLATION_POLICY_REVIEW,MEDIUM,1,Distribution content / policy,Confirm cancellation text and source configuration before publishing changes.,OPEN
+2026-11-04,Premier Suite,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-04,Premier Suite,BAR,GDS,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-04,Premier Suite,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-04,Premier Suite,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-05,Deluxe King,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-05,Deluxe King,BAR,GDS,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-05,Deluxe King,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-05,Deluxe King,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-05,Premier Suite,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,1120,4,48,No,BOOKABILITY_REVIEW,HIGH,1,Distribution systems / connectivity,"Verify booking path and rate mapping, then escalate with reproducible evidence.",OPEN
+2026-11-05,Premier Suite,BAR,GDS,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-05,Premier Suite,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-05,Premier Suite,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-06,Deluxe King,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-06,Deluxe King,BAR,GDS,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-06,Deluxe King,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-06,Deluxe King,BAR,OTA_B,CAD,2,Room only,After tax,NONE,710,12,48,Yes,INCOMPARABLE_RATE_BASIS,MEDIUM,1,Rate configuration / channel partner,Normalize tax and promotion basis; do not call this a rate defect yet.,OPEN
+2026-11-06,Premier Suite,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-06,Premier Suite,BAR,GDS,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-06,Premier Suite,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-06,Premier Suite,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-07,Deluxe King,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-07,Deluxe King,BAR,GDS,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-07,Deluxe King,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-07,Deluxe King,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,650,12,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-07,Premier Suite,BAR,OFFICIAL_WEB,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-07,Premier Suite,BAR,GDS,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-07,Premier Suite,BAR,OTA_A,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
+2026-11-07,Premier Suite,BAR,OTA_B,CAD,2,Room only,Before tax,NONE,1120,4,48,Yes,ALIGNED,NONE,0,,,NOT_REQUIRED
