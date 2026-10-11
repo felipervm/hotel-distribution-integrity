@@ -1,6 +1,8 @@
 """Independent synthetic audit: compare each channel snapshot against a fictional central reference."""
 from __future__ import annotations
 import csv, json
+from datetime import date
+from decimal import Decimal, InvalidOperation
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -17,20 +19,41 @@ ISSUES = {
 KEY = ("stay_date","room_type","rate_plan")
 BASIS = ("currency","occupancy","meal_plan","tax_basis","promotion_code")
 
+def money(value):
+    try:
+        amount = Decimal(value)
+    except InvalidOperation as error:
+        raise ValueError("Invalid nightly rate") from error
+    if not amount.is_finite() or amount < 0:
+        raise ValueError("Nightly rate must be finite and non-negative")
+    return amount
+
+def validate(records):
+    seen = set()
+    for row in records:
+        if any(not isinstance(row.get(k), str) or not row[k].strip() for k in FIELDS):
+            raise ValueError("Missing required snapshot field")
+        date.fromisoformat(row["stay_date"])
+        key = tuple(row[k] for k in KEY) + (row["channel"],)
+        if key in seen:
+            raise ValueError("Duplicate channel snapshot: " + str(key))
+        seen.add(key)
+        if int(row["availability"]) < 0 or int(row["cancel_window_hours"]) < 0:
+            raise ValueError("Negative inventory or cancellation window")
+        if int(row["occupancy"]) < 1:
+            raise ValueError("Occupancy must be positive")
+        if row["bookable"] not in ("Yes", "No"):
+            raise ValueError("Bookable must be Yes or No")
+        money(row["nightly_rate"])
+
 def read_snapshot(path=DATA/"channel_snapshot.csv"):
     with open(path,newline="",encoding="utf-8") as file:
         records=list(csv.DictReader(file))
-    seen=set()
-    for row in records:
-        key=tuple(row[k] for k in KEY)+(row["channel"],)
-        if key in seen: raise ValueError("Duplicate channel snapshot: "+str(key))
-        seen.add(key)
-        if int(row["availability"])<0: raise ValueError("Negative availability")
-        if int(row["cancel_window_hours"])<0: raise ValueError("Negative cancellation window")
-        if float(row["nightly_rate"])<0: raise ValueError("Negative nightly rate")
+    validate(records)
     return records
 
 def audit(records):
+    validate(records)
     baseline={tuple(row[k] for k in KEY):row for row in records if row["channel"]=="CENTRAL_REFERENCE"}
     results=[]
     for row in records:
@@ -41,7 +64,7 @@ def audit(records):
         else:
             same_basis=all(row[k]==ref[k] for k in BASIS)
             if not same_basis: issues.append("INCOMPARABLE_RATE_BASIS")
-            elif float(row["nightly_rate"])!=float(ref["nightly_rate"]): issues.append("RATE_DIFFERENCE_REVIEW")
+            elif money(row["nightly_rate"])!=money(ref["nightly_rate"]): issues.append("RATE_DIFFERENCE_REVIEW")
             if int(row["availability"])!=int(ref["availability"]): issues.append("AVAILABILITY_DIFFERENCE_REVIEW")
             if int(row["cancel_window_hours"])!=int(ref["cancel_window_hours"]): issues.append("CANCELLATION_POLICY_REVIEW")
             if row["bookable"]!=ref["bookable"]: issues.append("BOOKABILITY_REVIEW")
@@ -52,6 +75,22 @@ def audit(records):
                         "issue_count":len(issues),"assigned_team":team,"next_action":action,
                         "review_status":"OPEN" if issues else "NOT_REQUIRED"})
     return results
+
+def build_report(records, results):
+    baseline = {tuple(row[k] for k in KEY): row for row in records if row["channel"] == "CENTRAL_REFERENCE"}
+    findings = []
+    for row in results:
+        if not row["issue_count"]:
+            continue
+        ref = baseline.get(tuple(row[k] for k in KEY))
+        differences = [k for k in BASIS if ref and row[k] != ref[k]]
+        findings.append({**row, "reference": ref, "basis_differences": differences,
+            "rate_delta": str(money(row["nightly_rate"]) - money(ref["nightly_rate"])) if ref and not differences else None,
+            "evidence_required": ["Timestamped central and channel captures for the same stay and occupancy", "Validated room and rate-plan mapping; tax, meal and promotion terms", "Channel allotment and restrictions; reproducible booking path; published policy text"]})
+    return {"synthetic": True, "metrics": {"source_records": len(records), "comparisons": len(results),
+        "aligned": sum(r["issues"] == "ALIGNED" for r in results), "review_cases": len(findings),
+        "incomparable": sum("INCOMPARABLE_RATE_BASIS" in r["issues"] for r in results),
+        "high_priority": sum(r["priority"] == "HIGH" for r in results)}, "findings": findings}
 
 def write_outputs(results):
     with open(DATA/"audit_results.csv","w",newline="",encoding="utf-8") as file:
@@ -65,4 +104,5 @@ if __name__=="__main__":
     rows=read_snapshot()
     results=audit(rows)
     findings=write_outputs(results)
+    (DATA/"report.json").write_text(json.dumps(build_report(rows, results), indent=2)+"\n", encoding="utf-8")
     print(json.dumps({"synthetic":True,"snapshot_rows":len(rows),"comparisons":len(results),"review_cases":len(findings)},indent=2))
