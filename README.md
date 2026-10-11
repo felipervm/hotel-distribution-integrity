@@ -132,6 +132,6 @@ The images on the site are original AI-created depictions of fictional architect
 
 **Felipe Mattos**
 
-I study programming and data analysis and enjoy making complex information easier to understand and act on.
+I work with data analysis and data quality, with a particular interest in hospitality and the systems behind a seamless guest experience. I enjoy finding inconsistencies, understanding their operational context, and turning complex information into clear, actionable next steps.
 
 [Explore the website](https://felipervm.github.io/hotel-distribution-integrity/) · [GitHub](https://github.com/felipervm) · [LinkedIn](https://www.linkedin.com/in/felipervm)
