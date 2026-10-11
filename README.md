@@ -56,7 +56,7 @@ The interface offers native keyboard-accessible expandable cases, combined prior
 
 ## Visual provenance
 
-`site/architecture.svg` and `site/mark.svg` are original code-authored artwork created for this project. The architectural scene is fictional, not a photograph or depiction of a Four Seasons property. No proprietary photography or logo is used. Cormorant Garamond and Inter are self-hosted under the SIL Open Font License; license files are included in `site/fonts/`. System fallbacks keep the page usable while fonts load. No external font requests are made.
+`site/mark.svg` and the retained `site/architecture.svg` are original code-authored artwork. The active page uses three original AI-created architectural images in `site/images/`, depicting fictional properties. They are not photographs of real hotels or Four Seasons properties. Images have responsive 800px/1600px WebP versions, with lazy loading below the hero. All architectural scenes are fictional. No proprietary photography or logo is used. Cormorant Garamond and Inter are self-hosted under the SIL Open Font License; license files are included in `site/fonts/`. System fallbacks keep the page usable while fonts load. No external font requests are made.
 
 Design research: [Tengile MalaMala](https://tengilemalamala.com/), [Four Seasons](https://www.fourseasons.com/), [Toronto property](https://www.fourseasons.com/toronto/), [Magazine](https://www.fourseasons.com/magazine/), [Press Room](https://press.fourseasons.com/), and [public LinkedIn](https://www.linkedin.com/company/four-seasons-hotels-and-resorts/). Official Instagram could not be inspected because its public endpoint returned a rate-limit error. References informed editorial pacing and hospitality tone; their assets were not copied.
 
@@ -71,3 +71,7 @@ A production implementation would require property-aware and occupancy-aware mat
 [Felipe Mattos on LinkedIn](https://www.linkedin.com/in/felipervm) · [GitHub repository](https://github.com/felipervm/hotel-distribution-integrity)
 
 Independent candidate portfolio study; not client consulting work, an official Four Seasons site, or evidence of hospitality-platform employment.
+
+## Editorial interactions
+
+Channel selectors reveal the context of each distribution handoff. The operating-method tabs support mouse, Enter, arrow keys, Home, and End. The representative investigation reveals basis, evidence, and routing in three user-controlled steps. Model boundaries and handoff detail use native disclosures. Scroll behavior stays native, with a compact header and a lightweight reading-progress line; there is no scroll hijacking or mandatory parallax. Reduced motion disables transition and reveal animation.

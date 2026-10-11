@@ -17,42 +17,39 @@
 <link rel="stylesheet" href="site/fonts.css">
 <link rel="stylesheet" href="site/style.css">
 <script src="site/app.js" defer></script>
+<noscript><style>.method-panel[hidden]{display:block}.method-tabs{display:none}</style></noscript>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav"><a class="brand" href="#top"><span class="brand-mark">H / I</span><span>HOTEL DISTRIBUTION<br>INTEGRITY</span></a>
 <nav aria-label="Main navigation"><a href="#study">The study</a><a href="#audit">The audit</a><a href="#method">Method</a><a href="#author">Felipe Mattos ↗</a></nav>
 </header>
-<main id="main">
+<div class="reading-progress" aria-hidden="true"></div><main id="main">
 <section class="hero" id="top">
-<div class="hero-art" aria-hidden="true"></div>
+<picture class="hero-art"><source media="(max-width: 700px)" srcset="site/images/arrival-800.webp"><img src="site/images/arrival-1600.webp" alt="Fictional stone lodge overlooking a quiet pool and olive landscape" width="1600" height="900" fetchpriority="high"></picture>
 <div class="hero-content">
 <p class="eyebrow">AN INDEPENDENT OPERATIONS STUDY / FELIPE MATTOS</p>
 <h1>Every channel.<br><em>One consistent<br>promise.</em></h1>
 <p class="hero-lead">An independent study of how rate, availability, and booking-policy consistency can be reviewed across luxury hotel distribution channels.</p>
 <div class="actions"><a class="button light" href="#audit">Explore the audit <span>↗</span></a><a class="text-link" href="#method">View methodology ↗</a></div>
 <p class="disclaimer">Independent portfolio work. All data are synthetic.<br>No affiliation with Four Seasons or any hotel system vendor.</p></div>
-<div class="hero-bottom"><a href="#context">SCROLL TO DISCOVER ↓</a><span>ORIGINAL ARCHITECTURAL ILLUSTRATION · FICTIONAL SPACE</span></div>
+<div class="hero-bottom"><a href="#context">SCROLL TO DISCOVER ↓</a><span>AI-CREATED ARCHITECTURE · FICTIONAL PROPERTY</span></div>
 </section>
-<section class="chapter wrap" id="context">
-<div class="section-label"><span>01 / THE INVISIBLE COMPLEXITY</span><span>BEFORE ARRIVAL</span></div>
-<div class="editorial">
-<h2>A seamless stay begins<br><em>long before arrival.</em></h2>
-<div class="prose">
-<p>A reservation begins with a promise: the room is available, the rate is clear, and the conditions mean what they say.</p>
-<p>That promise travels through central property-management and reservation systems, hotel websites, global distribution systems, online travel agencies, and distribution partners. Each handoff introduces context that a simple price check can miss.</p>
-<p>Rate integrity, availability alignment, cancellation terms, and bookability all shape the booking experience—and the decisions an operations team needs to make.</p></div></div>
-<blockquote>A difference is a signal to investigate,<br><em>not proof of an error.</em></blockquote>
-<div class="channel-line" aria-label="Modeled distribution environment"><span>Central reference</span><span>Hotel website</span><span>GDS</span><span>OTA A</span><span>OTA B</span></div>
+<section class="chapter wrap visual-story" id="context">
+<div class="story-photo"><img src="site/images/interior-1600.webp" srcset="site/images/interior-800.webp 800w, site/images/interior-1600.webp 1600w" sizes="(max-width: 700px) 90vw, 45vw" width="1536" height="1024" loading="lazy" alt="Fictional limestone interior with linen seating and garden light"><span class="photo-caption">AN IMAGINED STAY / ORIGINAL AI-CREATED IMAGE</span></div>
+<div class="story-copy"><p class="eyebrow">01 / BEFORE ARRIVAL</p><h2>A seamless stay<br>begins <em>long<br>before arrival.</em></h2><p>The room. The rate. The conditions.<br>One promise travels through many channels.</p><p class="small">Explore each handoff in the modeled distribution environment.</p>
+<div class="channel-picker" role="group" aria-label="Explore distribution channels"><button type="button" data-channel="central" aria-pressed="true">Central</button><button type="button" data-channel="web" aria-pressed="false">Website</button><button type="button" data-channel="gds" aria-pressed="false">GDS</button><button type="button" data-channel="ota" aria-pressed="false">OTAs</button></div>
+<div class="channel-description" aria-live="polite"><h3 id="channel-title">The modeled reference.</h3><p id="channel-copy">A central baseline represents the authored rate, inventory, and cancellation terms. It is a fictional reference, not a property-management or reservation-system export.</p></div></div>
 </section>
+<section class="image-interlude"><img src="site/images/corridor-1600.webp" srcset="site/images/corridor-800.webp 800w, site/images/corridor-1600.webp 1600w" sizes="100vw" width="1600" height="900" loading="lazy" alt="Fictional stone corridor with a sequence of doorways and natural light"><div><p class="eyebrow">THE PRINCIPLE</p><h2>A difference is a signal<br>to investigate.<br><em>Not proof of an error.</em></h2><a class="text-link" href="#audit">Follow the evidence ↗</a></div><span class="photo-caption">AI-CREATED IMAGE · FICTIONAL PROPERTY</span></section>
 <section class="chapter stone" id="study">
 <div class="wrap">
 <div class="section-label"><span>02 / THE STUDY</span><span>A CONTROLLED, SYNTHETIC ENVIRONMENT</span></div>
 <div class="editorial">
 <h2>Small enough to trace.<br><em>Detailed enough to question.</em></h2>
 <div class="prose">
-<p>A fictional luxury hotel. Two room types. One BAR rate plan. Seven stay dates. Four channels compared with a modeled central reference.</p>
-<p>The reference is an authored baseline, not a system export or an assertion that every channel must carry identical inventory. Currency, occupancy, meals, taxes, and promotions establish whether rates can be compared.</p></div></div>
+<p>One fictional hotel. Two room types.<br>Seven dates. Four distribution channels.</p>
+<details class="editorial-disclosure"><summary>What makes the comparison valid?</summary><p>The reference is an authored baseline, not a system export or an assertion that every channel must carry identical inventory. Currency, occupancy, meals, taxes, and promotions establish whether rates can be compared.</p></details></div></div>
 <div class="stats">
 <div><strong data-metric="source_records">—</strong><span>Synthetic source records</span></div>
 <div><strong data-metric="comparisons">—</strong><span>Reference comparisons</span></div>
@@ -77,38 +74,19 @@
 <div class="section-label"><span>04 / ONE EXCEPTION, FULLY EXPLAINED</span><span>COMMERCIAL CONTEXT MATTERS</span></div>
 <div class="editorial">
 <h2>Two prices.<br><em>One unanswered question.</em></h2>
-<div class="prose">
-<p>A larger displayed amount can look like a rate discrepancy. But when the tax basis differs, subtraction alone cannot establish a like-for-like rate difference.</p>
-<p>This authored case demonstrates the decision to pause interpretation and request better evidence.</p></div></div>
+<div class="prose"><p>A price difference is easy to see.<br>Its meaning takes more care.</p><p class="small">Follow one authored case, from observation to the next review.</p></div></div>
 <div id="scenario-content">
 <p>Loading the commercial-basis case…</p></div></div>
 </section>
-<section class="chapter wrap" id="method">
-<div class="section-label"><span>05 / THE OPERATING METHOD</span><a href="https://github.com/felipervm/hotel-distribution-integrity/blob/main/src/audit.py">READ THE PYTHON IMPLEMENTATION ↗</a></div>
-<h2>Make the difference<br><em>explainable.</em></h2>
-<div class="steps">
-<article><span>01</span>
-<h3>Normalize</h3>
-<p>Match stay date, room type, and rate plan. Validate required fields, dates, finite non-negative rates, integer inventory, policy windows, occupancy, and booking flags. Reject duplicate keys.</p></article>
-<article><span>02</span>
-<h3>Compare</h3>
-<p>Use decimal arithmetic for money. Check currency, occupancy, meals, tax basis, and promotion before comparing rates. Compare inventory, policy windows, and booking flags independently.</p></article>
-<article><span>03</span>
-<h3>Investigate</h3>
-<p>Preserve the reference and observation. A missing baseline remains inconclusive. Ask for capture times, mapping, allotment, restrictions, and published conditions. This stage requires human review.</p></article>
-<article><span>04</span>
-<h3>Route</h3>
-<p>Use the highest issue priority to suggest an owner and next action. Keep the case open until authorized operational evidence supports a decision.</p></article></div>
-<div class="source-links"><a href="https://github.com/felipervm/hotel-distribution-integrity/blob/main/data/channel_snapshot.csv">Source snapshot ↗</a><a href="https://github.com/felipervm/hotel-distribution-integrity/tree/main/tests">Regression tests ↗</a><a href="data/report.json">Structured evidence ↗</a></div>
-</section>
+<section class="chapter wrap" id="method"><div class="section-label"><span>05 / THE OPERATING METHOD</span><a href="https://github.com/felipervm/hotel-distribution-integrity/blob/main/src/audit.py">THE IMPLEMENTATION ↗</a></div><div class="method-layout"><div class="method-visual"><img src="site/images/corridor-800.webp" width="800" height="450" loading="lazy" alt="Sunlight linking the doorways of an imagined lodge"><p class="eyebrow">FROM OBSERVATION TO A CLEAR NEXT ACTION</p><h2>Make the difference<br><em>explainable.</em></h2></div><div class="method-interaction"><div class="method-tabs" role="tablist" aria-label="Operating method"><button type="button" role="tab" id="method-tab-0" aria-controls="method-panel-0" aria-selected="true" tabindex="0">01 Normalize</button><button type="button" role="tab" id="method-tab-1" aria-controls="method-panel-1" aria-selected="false" tabindex="-1">02 Compare</button><button type="button" role="tab" id="method-tab-2" aria-controls="method-panel-2" aria-selected="false" tabindex="-1">03 Investigate</button><button type="button" role="tab" id="method-tab-3" aria-controls="method-panel-3" aria-selected="false" tabindex="-1">04 Route</button></div><div class="method-panel" id="method-panel-0" role="tabpanel" aria-labelledby="method-tab-0" tabindex="0"><span class="method-number">01</span><h3>Normalize</h3><p>Match stay date, room type, and rate plan. Validate required fields, dates, finite non-negative rates, integer inventory, policy windows, occupancy, and booking flags. Reject duplicate keys.</p></div><div class="method-panel" id="method-panel-1" role="tabpanel" aria-labelledby="method-tab-1" tabindex="0" hidden><span class="method-number">02</span><h3>Compare</h3><p>Use decimal arithmetic for money. Check currency, occupancy, meals, tax basis, and promotion before comparing rates. Compare inventory, policy windows, and booking flags independently.</p></div><div class="method-panel" id="method-panel-2" role="tabpanel" aria-labelledby="method-tab-2" tabindex="0" hidden><span class="method-number">03</span><h3>Investigate</h3><p>Preserve the reference and observation. A missing baseline remains inconclusive. Ask for capture times, mapping, allotment, restrictions, and published conditions. This stage requires human review.</p></div><div class="method-panel" id="method-panel-3" role="tabpanel" aria-labelledby="method-tab-3" tabindex="0" hidden><span class="method-number">04</span><h3>Route</h3><p>Use the highest issue priority to suggest an owner and next action. Keep the case open until authorized operational evidence supports a decision.</p></div></div></div><div class="source-links"><a href="https://github.com/felipervm/hotel-distribution-integrity/blob/main/data/channel_snapshot.csv">Source snapshot ↗</a><a href="https://github.com/felipervm/hotel-distribution-integrity/tree/main/tests">Regression tests ↗</a><a href="data/report.json">Structured evidence ↗</a></div></section>
 <section class="handoff stone">
 <div class="wrap editorial">
 <div>
 <p class="eyebrow">06 / OPERATIONAL HANDOFF</p>
 <h2>A clear next action.<br><em>A traceable starting point.</em></h2></div>
 <div class="prose">
-<p>Every review case carries a suggested team, an open status, and a recommended verification. The expandable register adds matched reference values and an evidence checklist.</p>
-<p>The complete CSV includes aligned comparisons as well as review cases. It is a static handoff artifact; no live case-management system or completed resolution is implied.</p><a class="button" href="data/audit_results.csv" download>Download complete audit CSV <span>↓</span></a><a class="text-link block" href="data/channel_snapshot.csv" download>Download synthetic source snapshot ↓</a></div></div>
+<p>One case. A suggested owner.<br>Evidence to collect. A clear next verification.</p>
+<details class="editorial-disclosure"><summary>What is included in the handoff?</summary><p>The complete CSV includes aligned comparisons as well as review cases. It is a static handoff artifact; no live case-management system or completed resolution is implied.</p></details><a class="button" href="data/audit_results.csv" download>Download complete audit CSV <span>↓</span></a><a class="text-link block" href="data/channel_snapshot.csv" download>Download synthetic source snapshot ↓</a></div></div>
 </section>
 <section class="chapter wrap" id="limitations">
 <div class="section-label"><span>07 / LIMITATIONS & NEXT VALIDATION</span><span>THE BOUNDARY OF THE EVIDENCE</span></div>
@@ -116,8 +94,8 @@
 <h2>Confidence begins<br><em>with knowing the limits.</em></h2>
 <div class="prose">
 <p>All data are synthetic. No internal hotel data were used. No OPERA, SynXis, OTA, or GDS integrations were accessed. This is a simplified operational exercise, and a difference is not a confirmed defect.</p>
-<p>The fixture has one property, one-night rates, one rate plan, and no capture timestamps. It does not model multi-night pricing, currency conversion, effective dates, negotiated contracts, or production room mapping. Cancellation windows are compared numerically, not interpreted from policy text.</p>
-<p>Before production use: validate property and occupancy keys, mapping rules, source timing, channel allotments, tax and promotion normalization, contractual conditions, and booking restrictions. Authorized system access and operational review are essential. No financial or guest-impact outcomes are claimed.</p></div></div>
+<details class="editorial-disclosure"><summary>Model boundaries</summary><p>The fixture has one property, one-night rates, one rate plan, and no capture timestamps. It does not model multi-night pricing, currency conversion, effective dates, negotiated contracts, or production room mapping. Cancellation windows are compared numerically, not interpreted from policy text.</p></details>
+<details class="editorial-disclosure"><summary>Before production use</summary><p>Before production use: validate property and occupancy keys, mapping rules, source timing, channel allotments, tax and promotion normalization, contractual conditions, and booking restrictions. Authorized system access and operational review are essential. No financial or guest-impact outcomes are claimed.</p></details></div></div>
 </section>
 <section class="author dark" id="author">
 <div class="wrap editorial">
